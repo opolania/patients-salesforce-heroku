@@ -3,7 +3,6 @@ package com.kar.patients;
 import com.kar.patients.entities.Patient;
 import com.kar.patients.facade.SalesforceTransferFacade;
 import com.kar.patients.repository.PatientRepository;
-import com.kar.patients.salesforce.SalesforceAPI;
 import com.kar.patients.salesforce.VO.SF_Contact_VO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
