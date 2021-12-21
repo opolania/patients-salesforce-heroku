@@ -2,26 +2,48 @@ package com.kar.patients.salesforce.VO;
 
 public class SF_Contact_VO {
     private static final String DELIMETER = ",";
-    private String FirstName;
-    private String LastName;
+    private Integer id;
+    private String firstName;
+    private String lastName;
+    private String email;
 
     public String getFirstName() {
-        return FirstName;
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
-        FirstName = firstName;
+        this.firstName = firstName;
     }
 
     public String getLastName() {
-        return LastName;
+        return lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public void setLastName(String lastName) {
-        LastName = lastName;
+        this.lastName = lastName;
     }
 
-    public String toStringCSVFormat(){
-        return new StringBuilder().append(this.FirstName).append(",").append(this.LastName).append("\n").toString();
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+
+
+
+
+    public String toStringCSVFormat() {
+        return new StringBuilder().append(this.id).append(DELIMETER).append(this.firstName).append(DELIMETER).append(this.lastName).append("\n").toString();
     }
 }

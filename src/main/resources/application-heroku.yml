@@ -5,6 +5,6 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   datasource:
     #url: "jdbc:postgresql://localhost:5432/patients"
-    url: "jdbc:postgresql://ec2-3-226-165-146.compute-1.amazonaws.com:5432/d4l438dkugda6s"
+    #url: "jdbc:postgresql://ec2-3-226-165-146.compute-1.amazonaws.com:5432/d4l438dkugda6s"
     username: xlsdutaskovmbn
     password: 1272628283ac7405594e96fe4854fbfa98cd260a51074ba5fea5db65af60f68b

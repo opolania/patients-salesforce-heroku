@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/patients"
+    #url: "jdbc:postgresql://ec2-3-226-165-146.compute-1.amazonaws.com:5432/d4l438dkugda6s"
+    username: postgres
+    password: admin

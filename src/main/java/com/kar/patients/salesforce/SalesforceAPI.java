@@ -85,9 +85,10 @@ public class SalesforceAPI  {
 
         String batchId = "";
         String body = "{\n" +
-                "  \"operation\" : \"insert\",\n" +
+                "  \"operation\" : \"upsert\",\n" +
                 "  \"object\" : \""+SalesforceObject+"\",\n" +
                 "  \"contentType\" : \"CSV\",\n" +
+                "\"externalIdFieldName\":\"patientsId__c\",\n" +
                 "  \"lineEnding\" : \"LF\"\n" +
                 "}";
         HttpPost httpPost = new HttpPost(LOGINURL+CREATE_BULK_URL);
