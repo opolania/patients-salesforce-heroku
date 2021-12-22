@@ -21,7 +21,7 @@ public class PatientsApplication {
     @PostConstruct
     public void init() {
         List<Patient> patients = new ArrayList();
-        patients.add(new Patient(1,"Carolina","Lopez","xxxxxxxxxxxx@mail.com"));
+        patients.add(new Patient(1,"Carolina","Lopez",""));
         patients.add(new Patient(2,"Lorena","Lopez",""));
         patientRepository.saveAll(patients);
         try {
