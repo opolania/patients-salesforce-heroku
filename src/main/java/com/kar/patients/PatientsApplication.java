@@ -25,7 +25,7 @@ public class PatientsApplication {
         patients.add(new Patient(2,"Lorena","Lopez",""));
         patientRepository.saveAll(patients);
         try {
-            salesforceTransferService.sendContactsToSalesfoce();
+            salesforceTransferService.sendContactsToSalesforce();
         } catch (Exception e) {
             e.printStackTrace();
         }

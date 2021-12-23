@@ -25,7 +25,7 @@ public class SalesforceTransferService {
 
 
 
-    public void sendContactsToSalesfoce() throws Exception {
+    public List<Patient> sendContactsToSalesforce() throws Exception {
         List<Patient> patients = patientService.listAllPatients();
         System.out.println("number of patients:"+patients.size());
         String csvContent = getCSVContent(this.getSaleforceContacts(patients));
@@ -35,6 +35,7 @@ public class SalesforceTransferService {
         String batchId = salesforceAPI.createBatch(accessToken,"Contact");
         salesforceAPI.uploadBatchData(accessToken,batchId,csvContent);
         salesforceAPI.completeBatch(accessToken,batchId);
+        return patients;
 
     }
 
